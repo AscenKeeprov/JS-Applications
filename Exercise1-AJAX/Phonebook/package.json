@@ -1,0 +1,9 @@
+{
+  "name": "phonebook",
+  "version": "0.0.0",
+  "description": "Phonebook",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
