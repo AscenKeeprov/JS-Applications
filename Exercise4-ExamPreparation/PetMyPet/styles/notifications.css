@@ -1,0 +1,127 @@
+#notifications {
+    float: right;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    text-align: center;
+    margin: 1em;
+}
+
+.notification {
+    font-size: 1.5em;
+    color: #ffffff;
+    display: none;
+    text-align: right;
+}
+
+.notification>span {
+    display: inline-block;
+    padding:  0.5em 2em 0.5em 2em;
+    border-radius: 10px;
+}
+
+#loadingBox>span {
+    background: #7CB3E9;
+}
+#infoBox>span {
+    background: #393;
+}
+#errorBox>span {
+    background: #F50;
+}
+
+@keyframes loader {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.loader {
+	align-items: center;
+	background-color: rgb(95, 160, 160);
+	border-radius: 32px 0 0 32px;
+	display: flex;
+	height: 64px;
+	line-height: 64px;
+	position: absolute;
+	right: 0;
+	top: 80px;
+	text-align: center;
+}
+
+.loader div {
+	animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite reverse;
+	border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.9) rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 8px;
+	box-sizing: border-box;
+	display: block;
+	height: 48px;
+	margin: 8px;
+	width: 48px;
+}
+
+.loader span {
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	margin: 4px;
+	padding: 4px;
+}
+
+.message {
+	border-radius: 0 0 16px 16px;
+	display: flex;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px 16px 4px 4px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	width: 360px;
+}
+
+.message button {
+	background-color: transparent;
+	border: none;
+	float: right;
+	margin-right: -14px;
+	padding: 0;
+}
+
+.message button:hover {
+	mix-blend-mode: difference;
+}
+
+.message span {
+	line-height: normal;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px;
+	vertical-align: middle;
+}
+
+.message-error {
+	background-color: rgb(255, 210, 195);
+}
+
+.message-error button, .message-error span {
+	color: rgb(185, 45, 0);
+}
+
+.message-info {
+	background-color: rgb(195, 255, 245);
+}
+
+.message-info button, .message-info span {
+	color: rgb(0, 115, 95);
+}
+
+.message-success {
+	background-color: rgb(210, 255, 195);
+}
+
+.message-success button, .message-success span {
+	color: rgb(35, 145, 0);
+}
