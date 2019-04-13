@@ -1,0 +1,14 @@
+﻿<script id="cats-template" type="text/x-handlebars-template">
+	{{#each cats}}
+	<div class="card border-secondary m-1">
+		<img class="card-img-center" src="{{imageLocation}}" alt="Cat_{{statusCode}}_Image" />
+		<div class="card-body p-2">
+			<button class="btn btn-primary">Show status code</button>
+			<div id="{{id}}" style="display: none">
+				<h4 class="card-title mb-1 mt-2">Status Code: {{statusCode}}</h4>
+				<p class="card-text">{{statusMessage}}</p>
+			</div>
+		</div>
+	</div>
+	{{/each}}
+</script>

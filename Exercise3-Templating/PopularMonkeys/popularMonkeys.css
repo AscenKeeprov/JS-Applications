@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+.monkey {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	max-width: 26%;
+	min-width: 280px;
+	padding: 1%;
+}
+
+	.monkey button {
+		background: transparent;
+		border: 2px solid #FFFAEC;
+		color: #FFFAEC;
+		display: block;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 5px auto;
+		padding: 0.5rem;
+		text-transform: uppercase;
+	}
+
+		.monkey button:hover {
+			background: rgba(0, 0, 0, 0.5);
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+	.monkey h2 {
+		color: #FFFAEC;
+	}
+
+	.monkey img {
+		border: 2px solid #FFFAEC;
+		max-height: 280px;
+		max-width: 100%;
+		min-width: 280px;
+	}
+
+#monkeys {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+p {
+	background: rgba(0, 0, 0, 0.5);
+	color: #FFFAEC;
+	font-size: 20px;
+	margin: 0.5rem 0;
+	max-height: 215px;
+	overflow: auto;
+	padding: 0.5rem;
+}
+
+section {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/forest.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 10vw;
+	text-align: center;
+}
+
+	section > h1 {
+		color: #FFFAEC;
+		font-size: 40px;
+		margin-bottom: 1.75rem;
+		margin-top: 0;
+		padding-top: 2rem;
+	}

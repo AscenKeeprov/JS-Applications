@@ -1,0 +1,13 @@
+﻿#allCats {
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card-img-center {
+	border-bottom: 1px solid #6c757d;
+	border-radius: 3px 3px 0 0;
+	height: 200px;
+	width: 300px;
+}
