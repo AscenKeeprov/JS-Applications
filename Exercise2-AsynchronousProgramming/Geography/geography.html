@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Geography</title>
+	<link href="style.css" rel="stylesheet" />
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="classes.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h3>Countries &amp; Towns</h3>
+		<div class="addPanel">
+			<input id="countryNameInput" type="text" placeholder="Country name" />
+			<button id="addCountryButton">Add Country</button>
+			<input id="townNameInput" type="text" placeholder="Town name" />
+			<button id="addTownButton">Add Town</button>
+			<button id="saveAddButton">Save</button>
+			<button id="cancelAddButton">Cancel</button>
+		</div>
+	</header>
+	<main>
+		<details>
+			<summary>Legend</summary>
+			<span><mark class="mark-list">[&#9776;]</mark> - expand/collapse a list of towns in a country</span>
+			<br />
+			<span><mark class="mark-save">[&#10004;]</mark> - save a renamed item</span>
+			<br />
+			<span><mark class="mark-edit">[&#9998;]</mark> - rename a country/town</span>
+			<br />
+			<span><mark class="mark-delete">[&#10008;]</mark> - delete a country/town</span>
+			<br />
+			<p style="text-indent:1rem">
+				<span>Toponyms must start with an uppercase letter and can consist only of latin characters,</span>
+				<span>dashes, apostrophes as well as single spaces between words.</span>
+			</p>
+		</details>
+	</main>
+</body>
+</html>

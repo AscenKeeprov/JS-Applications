@@ -1,0 +1,221 @@
+﻿* {
+	border-radius: 4px;
+}
+
+.activeInput {
+	background-color: #FAFADD;
+	border: 1px solid #000000;
+}
+
+#addCountryButton, #addTownButton {
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding: 0.25rem;
+}
+
+#addCountryButton {
+	background-color: #EEDD00;
+}
+
+.addPanel {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+	.addPanel > * {
+		margin-right: 0.25rem;
+	}
+
+#addTownButton {
+	background-color: #00EEDD;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 350px;
+}
+
+#cancelAddButton, .cancelEditButton {
+	color: #DD2200;
+	display: none;
+	padding: 0 0.25rem;
+}
+
+#countriesList {
+	border-color: #000000;
+	border-radius: 0;
+	border-style: solid;
+	border-width: 1px 0 1px 0;
+	list-style-type: "\2691";
+	margin: 0 0 0.25rem 0;
+	padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.country:hover:not(input) {
+	color: #FCCF00;
+	font-size: large;
+}
+
+.country:hover > input {
+	font-weight: bold;
+}
+
+.country > button:hover {
+	border: 1px solid #FCCF00;
+}
+
+.country > input {
+	max-width: 140px;
+}
+
+	.country > input:hover ~ .deleteButton, .country > .deleteButton:hover {
+		color: #DD0022;
+	}
+
+	.country > input:hover ~ .editButton, .country > .editButton:hover {
+		color: #0077CC;
+	}
+
+	.country > input:hover ~ .listButton, .country > .listButton:hover {
+		color: #088D2D;
+	}
+
+	.country > input:hover ~ .saveButton, .country > .saveButton:hover {
+		color: #3CC300;
+	}
+
+.countryName, .townName {
+	border: none;
+}
+
+#countryNameInput, #townNameInput {
+	display: none;
+}
+
+.deleteButton, .editButton, .listButton, .saveButton {
+	border: none;
+	background-color: inherit;
+	padding: 0;
+}
+
+.errorMsg {
+	color: #DD0022;
+	padding: 0 0.25rem;
+}
+
+header {
+	align-items: center;
+	border-color: #FCCF00;
+	border-radius: 4px 4px 0 0;
+	border-style: ridge;
+	border-width: 2px 2px 0 2px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0.25rem 0.5rem;
+}
+
+	header > h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+	}
+
+.infoMsg {
+	color: #077777;
+	padding: 0 0.25rem;
+}
+
+li > *:not(ul) {
+	margin-left: 0.25rem;
+}
+
+main {
+	border-color: #FCCF00;
+	border-radius: 0 0 4px 4px;
+	border-style: ridge;
+	border-width: 0 2px 2px 2px;
+	padding: 0.25rem 0.5rem;
+}
+
+mark {
+	background-color: #FFFFFF;
+}
+
+	mark.mark-delete {
+		color: #DD0022;
+	}
+
+	mark.mark-edit {
+		color: #0077CC;
+	}
+
+	mark.mark-list {
+		color: #088D2D;
+	}
+
+	mark.mark-save {
+		color: #3CC300;
+	}
+
+.messageBox {
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	margin: 0 0 0.5rem 0;
+	padding: 0 0.25rem;
+}
+
+	.messageBox > .errorMsg {
+		border: 1px solid #DD0022;
+	}
+
+	.messageBox > .infoMsg {
+		border: 1px solid #077777;
+	}
+
+#saveAddButton {
+	background-color: #3CC300;
+	color: #FFFFFF;
+	display: none;
+	font-weight: bold;
+	padding: 0.25rem;
+}
+
+.saveButton {
+	display: none;
+}
+
+.town:hover:not(input) {
+	color: #00CCBB;
+	font-size: large;
+}
+
+.town:hover > input {
+	font-weight: bold;
+}
+
+.town > button:hover {
+	border: 1px solid #00CCBB;
+}
+
+.town > input {
+	max-width: 140px;
+}
+
+	.town > input:hover ~ .deleteButton, .town > .deleteButton:hover {
+		color: #DD0022;
+	}
+
+	.town > input:hover ~ .editButton, .town > .editButton:hover {
+		color: #0077CC;
+	}
+
+	.town > input:hover ~ .saveButton, .town > .saveButton:hover {
+		color: #3CC300;
+	}
+
+.townsList {
+	list-style-type: "\265C";
+	padding-left: 1rem;
+}
