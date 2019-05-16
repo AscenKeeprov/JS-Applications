@@ -1,0 +1,19 @@
+<header>
+	<nav>
+		<ul>
+			<li><a href="#/home">Home</a></li>
+			{{#if isAuthenticated}}
+				<li><a href="#/movie/all">Cinema</a></li>
+				<li><a href="#/movie/add">Add Movie</a></li>
+				<li><a href="#/movie/mine">My Movies</a></li>
+				<li class="right"><a href="#/logout">Logout</a></li>
+				<li class="right">Welcome, {{username}}!</li>
+			{{else}}
+				<li class="right"><a href="#/register">Register</a></li>
+				<li class="right"><a href="#/login">Login</a></li>
+			{{/if}}
+		</ul>
+	</nav>
+</header>
+<main>{{> content}}</main>
+<footer>@Movies</footer>

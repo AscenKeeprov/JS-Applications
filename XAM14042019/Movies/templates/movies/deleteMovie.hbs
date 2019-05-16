@@ -1,0 +1,16 @@
+<div id="deleteMovie">
+	<h1>Delete movie</h1>
+	<form action="#/movie/delete/{{movie._id}}" method="POST">
+		<label>Title</label>
+		<input type="text" name="title" value="{{movie.title}}" disabled="disabled" />
+		<label>Image Url</label>
+		<input type="text" name="imageUrl" value="{{movie.imageUrl}}" disabled="disabled">
+		<label>Description</label>
+		<textarea type="text" name="description" disabled="disabled">{{movie.description}}</textarea>
+		<label>Genres</label>
+		<input type="text" name="genres" value="{{movie.genres}}" disabled="disabled">
+		<label>Available Tickets</label>
+		<input type="number" name="tickets" value="{{movie.tickets}}" disabled="disabled">
+		<input type="submit" value="Delete">
+	</form>
+</div>

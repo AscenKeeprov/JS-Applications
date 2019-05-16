@@ -1,0 +1,69 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Skeleton</Name>
+    <RootNamespace>Skeleton</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7e3bda0c-257b-4b1c-a6a9-621228518980</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="libraries\" />
+    <Folder Include="scripts\" />
+    <Folder Include="scripts\handlers\" />
+    <Folder Include="scripts\services\" />
+    <Folder Include="styles\" />
+    <Folder Include="templates\" />
+    <Folder Include="templates\common\" />
+    <Folder Include="templates\entities\" />
+    <Folder Include="templates\identity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="libraries\handlebars.min.js" />
+    <Compile Include="libraries\jquery.min.js" />
+    <Compile Include="libraries\sammy.handlebars.js" />
+    <Compile Include="libraries\sammy.min.js" />
+    <Compile Include="scripts\app.js" />
+    <Compile Include="scripts\handlers\home-handler.js" />
+    <Compile Include="scripts\handlers\user-handler.js" />
+    <Compile Include="scripts\kinvey.js" />
+    <Compile Include="scripts\router.js" />
+    <Compile Include="scripts\services\message-service.js" />
+    <Compile Include="scripts\services\user-service.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="index.html" />
+    <Content Include="styles\bootstrap.min.css" />
+    <Content Include="styles\bootstrap.min.css.map" />
+    <Content Include="styles\site.css" />
+    <Content Include="templates\common\layout.hbs" />
+    <Content Include="templates\entities\allEntities.hbs" />
+    <Content Include="templates\identity\login.hbs" />
+    <Content Include="templates\identity\register.hbs" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
